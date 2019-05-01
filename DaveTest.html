@@ -12,7 +12,7 @@ $.get('DQResults.txt',function(data){
 });
 
 for(var i = 0; i < myData.length; i++){
-	myResults[i] = myData.split('|');
+	myResults.push(myData[i].split('|'));
 };
 console.log(myResults);
 </script>
