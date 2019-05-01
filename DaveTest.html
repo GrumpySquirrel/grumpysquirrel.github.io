@@ -1,4 +1,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
 
 <script type="text/javascript">
 var myData = new Array();
@@ -8,9 +10,9 @@ $.get('DQResults.txt',function(data){
 	myData = data.split('\n');
 	console.log(myData);
 });
-	
-$.get(myData,function(data){
-	myResults = data.split('\t');
-	console.log(myResults);
-});
+
+for(var i = 0; i < myData.length; i++){
+	myResults[i] = myData.split('|');
+};
+console.log(myResults);
 </script>
