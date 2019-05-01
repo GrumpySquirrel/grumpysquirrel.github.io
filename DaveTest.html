@@ -2,9 +2,15 @@
 
 <script type="text/javascript">
 var myData = new Array();
+var myResults = new Array();
 
 $.get('DQResults.txt',function(data){
 	myData = data.split('\n');
 	console.log(myData);
+});
+	
+$.get(myData,function(data){
+	myResults = data.split('\t');
+	console.log(myResults);
 });
 </script>
