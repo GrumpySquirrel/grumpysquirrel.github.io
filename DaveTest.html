@@ -3,11 +3,10 @@
 <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
 
 <script type="text/javascript">
-//var myData = new Array();
-var myData = [];	
+var myData = new Array();
 var myResults = [];
 
-$.get('DQResults.txt',function(data){
+$.get('https://grumpysquirrel.github.io/DQResults.txt',function(data){
 	myData = data.split('\n');
 });
 	
